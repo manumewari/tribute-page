@@ -3,9 +3,9 @@
     background-color: ghostwhite;
 }
 .poster-class{
-    margin-top: 350px;
-    margin-left: 20px;
-    padding: 20px;
+    margin-top: 20rem;
+    margin-left: 1.5rem;
+    padding: 2rem;
     position: absolute;
     z-index: 1;
     width: 40%;
@@ -15,15 +15,14 @@
 
 #poster-text{
     font-size: 5vw;
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
     animation-name: text-appear;
     animation-duration: 10s;
     font-family: Srisakdi;
 }
 
 #poster-footer{
-    font-size: 1vw;
-
+    font-size: 1.5vw;
     animation-name: footer-appear;
     animation-duration: 10s;
 }
@@ -31,23 +30,19 @@
 @keyframes text-appear {
     0% {
         opacity: 0;
-        top: 0px;
-        left: 0px;
+        top: 0rem;
     }
     25% {
         color: lightgray;
-        top: 0px;
-        left: 0px;
+        top: 0rem;
     }
     75% {
         color: darkgray;
-        top: 50px;
-        left: 25px;
+        top: 5rem;
     }
     100% {
         color: black;
-        top: 0px;
-        left: -25px;
+        top: 0rem;
     }
 }
 
@@ -57,29 +52,29 @@
     }
     75% {
         color: lightgray;
-        top: 50px;
-        left: 25px;
+        top: 5rem;
     }
     100% {
         color: black;
-        top: 0px;
-        left: -25px;
+        top: 0rem;
     }
 }
 
 .quote-class{
-    margin-top: 100px;
-    margin-left: 20px;
-    padding: 40px;
+    margin-top: 7rem;
+    margin-left: 3rem;
+    padding: 2rem;
     position: absolute;
     z-index: 1;
-    border: 1px solid black;
+    border: 0.1rem solid black;
     width: 25%;
+    font-family: Caveat;
 }
 
 #quote-text{
     text-align: left;
-    color: green;
+    font-size: 2.5vw;
+    color: black;
 }
 
 #quote-footer{
@@ -92,7 +87,7 @@
 }
 
 .content-section{
-    margin: 20px;
+    margin: 2rem;
 }
 
 #navigation-bar{
@@ -102,80 +97,105 @@
 }
 
 .container-fluid{
-    border-top: 1px solid lightgray;
-    padding-top: 20px;
+    border-top: 0.01rem solid lightgray;
+    padding-top: 2rem;
+    font-family: Cabin Condensed;
 }
 
 .container-fluid .row{
-    padding-top: 10px;
+    padding-top: 1rem;
 }
 
 .card{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.19), 0 1rem 1rem rgba(0,0,0,0.23);
+    width: 18rem;
+    margin-bottom: 2rem;
+}
+
+.card .card-body .card-text{
+    text-align: center;
 }
 
 .poem-class{
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 40px;
-    border: 1px solid lightgray;
-    width: 95%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    border: 0.01rem solid lightgray;
     font-size: 0.8rem;
+    text-align: center;
 }
 
 #poem-text{
-    font-size: 0.8rem;
+    font-size: 1.5rem;
+    font-family: Caveat;
 }
 
 #poem-footer{
     text-align: right;
 }
 
+#more-info div{
+    align-self: center;
+    text-align: center;
+}
+
+#more-info p{
+    font-family: Gloria Hallelujah;
+    font-size: 2rem;
+    font-color: green;
+}
+
+#page-footer{
+    color:white;
+    background-color:gray;
+    text-align: center
+}
+
 @media (max-width: 900px) {
     .quote-class{
-        margin-top: 100px;
-        margin-left: 20px;
-        padding: 20px;
+        margin-top: 7rem;
+        margin-left: 2rem;
+        padding: 1rem;
     }
 
     #quote-text{
         text-align: left;
-        font-size: 18px;
+        font-size: 1.4rem;
     }
 
     #quote-footer{
         text-align: right;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .poster-class{
-        margin-top: 250px;
-        margin-left: 20px;
-        padding: 20px;
+        margin-top: 18rem;
+        margin-left: 1.5rem;
+        padding: 1rem;
     }
 }
 
 @media (max-width: 768px) {
     .quote-class{
-        margin-top: 100px;
-        margin-left: 20px;
-        padding: 20px;
+        margin-top: 6rem;
+        margin-left: 2rem;
+        padding: 1rem;
     }
 
     #quote-text{
         text-align: left;
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 
     #quote-footer{
         text-align: right;
-        font-size: 12px;
+        font-size: 1rem;
     }
 
     .poster-class{
-        margin-top: 200px;
-        margin-left: 20px;
-        padding: 20px;
+        margin-top: 15rem;
+        margin-left: 1.5rem;
+        padding: 1rem;
     }
 }
 
@@ -185,9 +205,9 @@
     }
 
     .poster-class{
-        margin-top: 150px;
-        margin-left: 20px;
-        padding: 20px;
+        margin-top: 10rem;
+        margin-left: 1.5rem;
+        padding: 2rem;
     }
 }
 @media (max-width: 400px){
@@ -200,7 +220,7 @@
         visibility: hidden;:
     }
     .img-fluid{
-        margin-top: 30px;
+        margin-top: 1rem;
     }
 }
 @media (max-width: 150px){
@@ -208,6 +228,6 @@
         visibility: hidden;:
     }
     .img-fluid{
-        margin-top: 30px;
+        margin-top: 2rem;
     }
 }
