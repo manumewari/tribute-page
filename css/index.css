@@ -123,14 +123,15 @@
     border: 0.01rem solid lightgray;
     font-size: 0.8rem;
     text-align: center;
+    font-family: Caveat;
 }
 
 #poem-text{
     font-size: 1.5rem;
-    font-family: Caveat;
 }
 
 #poem-footer{
+    font-size: 1.2rem;
     text-align: right;
 }
 
