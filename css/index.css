@@ -134,6 +134,11 @@
     text-align: right;
 }
 
+#more-info{
+    margin-bottom: 0rem;
+    padding-bottom: 2rem;
+}
+
 #more-info div{
     align-self: center;
     text-align: center;
