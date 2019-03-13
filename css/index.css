@@ -1,0 +1,213 @@
+
+#main-container{
+    background-color: ghostwhite;
+}
+.poster-class{
+    margin-top: 350px;
+    margin-left: 20px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    text-align: right;
+    font-family: Srisakdi;
+}
+
+#poster-text{
+    font-size: 5vw;
+    margin-bottom: 0px;
+    animation-name: text-appear;
+    animation-duration: 10s;
+    font-family: Srisakdi;
+}
+
+#poster-footer{
+    font-size: 1vw;
+
+    animation-name: footer-appear;
+    animation-duration: 10s;
+}
+
+@keyframes text-appear {
+    0% {
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        color: lightgray;
+        top: 0px;
+        left: 0px;
+    }
+    75% {
+        color: darkgray;
+        top: 50px;
+        left: 25px;
+    }
+    100% {
+        color: black;
+        top: 0px;
+        left: -25px;
+    }
+}
+
+@keyframes footer-appear {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        color: lightgray;
+        top: 50px;
+        left: 25px;
+    }
+    100% {
+        color: black;
+        top: 0px;
+        left: -25px;
+    }
+}
+
+.quote-class{
+    margin-top: 100px;
+    margin-left: 20px;
+    padding: 40px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid black;
+    width: 25%;
+}
+
+#quote-text{
+    text-align: left;
+    color: green;
+}
+
+#quote-footer{
+    text-align: right;
+    color: green;
+}
+
+.img-fluid{
+    max-height: 100%;
+}
+
+.content-section{
+    margin: 20px;
+}
+
+#navigation-bar{
+    position: fixed;
+    width:100%;
+    z-index: 2;
+}
+
+.container-fluid{
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+}
+
+.container-fluid .row{
+    padding-top: 10px;
+}
+
+.card{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.poem-class{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 40px;
+    border: 1px solid lightgray;
+    width: 95%;
+    font-size: 0.8rem;
+}
+
+#poem-text{
+    font-size: 0.8rem;
+}
+
+#poem-footer{
+    text-align: right;
+}
+
+@media (max-width: 900px) {
+    .quote-class{
+        margin-top: 100px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+
+    #quote-text{
+        text-align: left;
+        font-size: 18px;
+    }
+
+    #quote-footer{
+        text-align: right;
+        font-size: 18px;
+    }
+
+    .poster-class{
+        margin-top: 250px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quote-class{
+        margin-top: 100px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+
+    #quote-text{
+        text-align: left;
+        font-size: 12px;
+    }
+
+    #quote-footer{
+        text-align: right;
+        font-size: 12px;
+    }
+
+    .poster-class{
+        margin-top: 200px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px){
+    .quote-class{
+        visibility: hidden;:
+    }
+
+    .poster-class{
+        margin-top: 150px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+}
+@media (max-width: 400px){
+    .poster-class{
+        visibility: hidden;:
+    }
+}
+@media (max-width: 200px){
+    .quote-class{
+        visibility: hidden;:
+    }
+    .img-fluid{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 150px){
+    .quote-class{
+        visibility: hidden;:
+    }
+    .img-fluid{
+        margin-top: 30px;
+    }
+}
