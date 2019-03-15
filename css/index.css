@@ -2,9 +2,10 @@
 #main-container{
     background-color: ghostwhite;
 }
+
 .poster-class{
-    margin-top: 20rem;
-    padding: 2rem;
+    margin-top: 25%;
+    padding: 4%;
     position: absolute;
     z-index: 1;
     width: 40%;
@@ -15,33 +16,27 @@
 #poster-text{
     font-size: 5vw;
     margin-bottom: 0rem;
-    animation-name: text-appear;
+    animation-name: text-appear1;
     animation-duration: 10s;
-    font-family: Srisakdi;
 }
 
 #poster-footer{
-    font-size: 1.5vw;
-    animation-name: footer-appear;
+    animation-name: footer-appear1;
     animation-duration: 10s;
 }
 
 @keyframes text-appear {
     0% {
         opacity: 0;
-        top: 0rem;
     }
     25% {
         color: lightgray;
-        top: 0rem;
     }
     75% {
         color: darkgray;
-        top: 5rem;
     }
     100% {
         color: black;
-        top: 0rem;
     }
 }
 
@@ -51,18 +46,16 @@
     }
     75% {
         color: lightgray;
-        top: 5rem;
     }
     100% {
         color: black;
-        top: 0rem;
     }
 }
 
 .quote-class{
-    margin-top: 7rem;
-    margin-left: 3rem;
-    padding: 2rem;
+    margin-top: 10%;
+    margin-left: 5%;
+    padding: 2%;
     position: absolute;
     z-index: 1;
     border: 0.1rem solid black;
@@ -81,12 +74,8 @@
     color: green;
 }
 
-.img-fluid{
-    max-height: 100%;
-}
-
 .content-section{
-    margin: 2rem;
+    margin: 3%;
 }
 
 .container-fluid{
@@ -96,13 +85,13 @@
 }
 
 .container-fluid .row{
-    padding-top: 1rem;
+    padding-top: 2%;
 }
 
 .card{
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.19), 0 1rem 1rem rgba(0,0,0,0.23);
     width: 18rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5%;
 }
 
 .card .card-body .card-text{
@@ -110,11 +99,10 @@
 }
 
 .poem-class{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 2rem;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 3%;
     border: 0.01rem solid lightgray;
-    font-size: 0.8rem;
     text-align: center;
     font-family: Caveat;
 }
@@ -129,8 +117,8 @@
 }
 
 #more-info{
-    margin-bottom: 0rem;
-    padding-bottom: 2rem;
+    margin-bottom: 0%;
+    padding-bottom: 4%;
 }
 
 #more-info div{
@@ -150,83 +138,12 @@
     text-align: center
 }
 
-@media (max-width: 900px) {
+@media (max-width: 575px) {
     .quote-class{
-        margin-top: 7rem;
-        margin-left: 2rem;
-        padding: 1rem;
+        visibility: hidden;
     }
-
-    #quote-text{
-        text-align: left;
-        font-size: 1.4rem;
-    }
-
-    #quote-footer{
-        text-align: right;
-        font-size: 1rem;
-    }
-
     .poster-class{
-        margin-top: 18rem;
-        margin-left: 1.5rem;
-        padding: 1rem;
+        visibility: hidden;
     }
 }
 
-@media (max-width: 768px) {
-    .quote-class{
-        margin-top: 6rem;
-        margin-left: 2rem;
-        padding: 1rem;
-    }
-
-    #quote-text{
-        text-align: left;
-        font-size: 1.2rem;
-    }
-
-    #quote-footer{
-        text-align: right;
-        font-size: 1rem;
-    }
-
-    .poster-class{
-        margin-top: 15rem;
-        margin-left: 1.5rem;
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 576px){
-    .quote-class{
-        visibility: hidden;:
-    }
-
-    .poster-class{
-        margin-top: 10rem;
-        margin-left: 1.5rem;
-        padding: 2rem;
-    }
-}
-@media (max-width: 400px){
-    .poster-class{
-        visibility: hidden;:
-    }
-}
-@media (max-width: 200px){
-    .quote-class{
-        visibility: hidden;:
-    }
-    .img-fluid{
-        margin-top: 1rem;
-    }
-}
-@media (max-width: 150px){
-    .quote-class{
-        visibility: hidden;:
-    }
-    .img-fluid{
-        margin-top: 2rem;
-    }
-}
