@@ -16,12 +16,12 @@
 #poster-text{
     font-size: 5vw;
     margin-bottom: 0rem;
-    animation-name: text-appear1;
+    animation-name: text-appear;
     animation-duration: 10s;
 }
 
 #poster-footer{
-    animation-name: footer-appear1;
+    animation-name: footer-appear;
     animation-duration: 10s;
 }
 
@@ -99,8 +99,7 @@
 }
 
 .poem-class{
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: auto 3% auto 3%;
     padding: 3%;
     border: 0.01rem solid lightgray;
     text-align: center;
